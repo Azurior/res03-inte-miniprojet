@@ -72,7 +72,7 @@ html #pricing {
   width: 100%;
   height: 100vh;
   font-family: "JetBrains Mono", monospace;
-  background: linear-gradient(225deg, #7400b8, #6930c3, #5e60ce, #5390d9, #4ea8de, #48bfe3, #56cfe1);
+  background: linear-gradient(#7400b8, #5e60ce, #006466);
   background-repeat: no-repeat;
   color: white;
 }
@@ -94,16 +94,50 @@ html #pricing header nav ul li a:visited {
 html #pricing header nav ul li a:hover {
   text-decoration: underline;
 }
+html #pricing main h1 {
+  text-align: center;
+}
 html #pricing main section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  height: 80%;
-}
-html #pricing main section h1 h3 {
-  text-align: center;
+  height: 100%;
 }
 html #pricing main section h2 {
   display: none;
+}
+html #pricing main section article section {
+  background-color: white;
+  color: black;
+}
+html #pricing main section article section ul {
+  width: 100%;
+}
+html #pricing main section article section ul li {
+  display: inline-block;
+}
+html #pricing main section article:first-of-type h3 {
+  text-transform: uppercase;
+  margin-bottom: auto;
+  text-align: center;
+  background: #5e60ce;
+}
+html #pricing main section article:nth-of-type(2) h3 {
+  text-transform: uppercase;
+  margin-bottom: auto;
+  text-align: center;
+  background: #006466;
+}
+html #pricing main section article:nth-of-type(2) section {
+  border-left: solid 1px #64dfdf;
+}
+html #pricing main section article:nth-of-type(3) h3 {
+  text-transform: uppercase;
+  margin-bottom: auto;
+  text-align: center;
+  background: #5e60ce;
+}
+html #pricing main section article:nth-of-type(3) section {
+  border-left: solid 1px #64dfdf;
 }
 
 /*# sourceMappingURL=style.css.map */

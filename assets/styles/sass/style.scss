@@ -96,7 +96,7 @@ html {
         width: 100%;
         height: 100vh;
         font-family: 'JetBrains Mono', monospace;
-        background: $gradient-top-left;
+        background: $gradient-pricing;
         background-repeat: no-repeat;
         color: white;
         
@@ -130,17 +130,74 @@ html {
         
         & main{
             
+            h1{
+                text-align: center;
+            }
+            
             section{
+                
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
-                height: 80%;
+                height: 100%;
                 
-                h1 h3{
-                    text-align: center;
-                }
                 
                 h2{
                     display: none;
+                }
+                
+                article{
+                    
+                    section{
+                        background-color: white;
+                        color: black;
+                        ul{
+                            width: 100%;
+                            li{
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+                
+                article:first-of-type{
+                    
+                    h3{
+                        
+                        text-transform: uppercase;
+                        margin-bottom: auto;
+                        text-align: center;
+                        background: $neonPurple;
+                    }
+                }
+                
+                article:nth-of-type(2){
+                    
+                    h3{
+                        
+                        text-transform: uppercase;
+                        margin-bottom: auto;
+                        text-align: center;
+                        background: $skobeloff;
+                    }
+                    
+                    section{
+                        border-left: solid 1px $neonBlue;
+                    }
+                }
+                
+                article:nth-of-type(3){
+                    
+                    h3{
+                        
+                        text-transform: uppercase;
+                        margin-bottom: auto;
+                        text-align: center;
+                        background: $neonPurple;
+                    }
+                    
+                    section{
+                        border-left: solid 1px $neonBlue;
+                    }
                 }
             }
         }
