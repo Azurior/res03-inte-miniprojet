@@ -1,46 +1,109 @@
 html {
   font-size: 16px;
 }
-html body {
+html #index {
   margin: 0;
   padding: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   font-family: "JetBrains Mono", monospace;
   background: linear-gradient(225deg, #7400b8, #6930c3, #5e60ce, #5390d9, #4ea8de, #48bfe3, #56cfe1);
+  background-repeat: no-repeat;
   color: white;
 }
-html body header nav {
+html #index .invi {
+  display: none;
+}
+html #index header nav {
   width: 100vw;
   height: 8vh;
   border-bottom: 1px solid #64dfdf;
   text-align: center;
 }
-html body header nav ul {
+html #index header nav ul {
   list-style-type: none;
 }
-html body header nav ul li {
+html #index header nav ul li {
   display: inline-block;
 }
-html body main {
-  width: 100vw;
+html #index header nav ul li a {
+  text-decoration: none;
+}
+html #index header nav ul li a:visited {
+  color: white;
+}
+html #index header nav ul li a:hover {
+  text-decoration: underline;
+}
+html #index main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-html body main section:first-of-type {
-  width: 50vw;
-}
-html body main section:first-of-type h1 {
+html #index main section:first-of-type h1 {
   font-size: 2vw;
 }
-html body main section:last-of-type {
-  width: 50vw;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-html body main section:last-of-type main {
+html #index main section:last-of-type {
+  width: 45%;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.1);
   display: grid;
   grid-template-rows: repeat(7, 1fr);
+}
+html #index main section:last-of-type h3 {
+  color: #7400b8;
+}
+html #index main section:last-of-type p {
+  text-align: start;
+}
+html #index main section:last-of-type p.neonblue {
+  color: #64dfdf;
+  border-bottom: 1px solid #64dfdf;
+}
+html #index main section:last-of-type p.darkblue {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #006466;
+}
+html #index main section:last-of-type img {
+  margin-left: auto;
+}
+html #pricing {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: "JetBrains Mono", monospace;
+  background: linear-gradient(225deg, #7400b8, #6930c3, #5e60ce, #5390d9, #4ea8de, #48bfe3, #56cfe1);
+  background-repeat: no-repeat;
+  color: white;
+}
+html #pricing header nav {
+  width: 100vw;
+  height: 8vh;
+  border-bottom: 1px solid #64dfdf;
+  text-align: center;
+}
+html #pricing header nav ul li {
+  display: inline-block;
+}
+html #pricing header nav ul li a {
+  text-decoration: none;
+}
+html #pricing header nav ul li a:visited {
+  color: white;
+}
+html #pricing header nav ul li a:hover {
+  text-decoration: underline;
+}
+html #pricing main section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 80%;
+}
+html #pricing main section h1 h3 {
+  text-align: center;
+}
+html #pricing main section h2 {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
